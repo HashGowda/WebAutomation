@@ -20,7 +20,7 @@ public class BrowserStackSetup {
 
     @BeforeTest
     public void setup(){
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\HHRA1231\\Downloads\\Apps\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", path);
         driver= new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.get("https://www.browserstack.com/");
